@@ -1,0 +1,47 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": [
+      "es2020"
+    ],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "baseUrl": ".",
+    "paths": {
+      "assistant/api": [
+        "apps/api/src/index.ts"
+      ],
+      "assistant/kafka": [
+        "libs/kafka/src/index.ts"
+      ],
+      "assistant/langchain": [
+        "libs/langchain/src/index.ts"
+      ],
+      "assistant/prisma": [
+        "libs/prisma/src/index.ts"
+      ],
+      "@assistant/s3": [
+        "libs/s3/src/index.ts"
+      ],
+      "assistant/shared": [
+        "libs/shared/src/index.ts"
+      ]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "tmp"
+  ]
+}

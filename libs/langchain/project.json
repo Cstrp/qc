@@ -1,0 +1,24 @@
+{
+  "name": "langchain",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/langchain/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": [
+        "{options.outputPath}"
+      ],
+      "options": {
+        "outputPath": "dist/libs/langchain",
+        "tsConfig": "libs/langchain/tsconfig.lib.json",
+        "packageJson": "libs/langchain/package.json",
+        "main": "libs/langchain/src/index.ts",
+        "assets": [
+          "libs/langchain/*.md"
+        ]
+      }
+    }
+  }
+}
